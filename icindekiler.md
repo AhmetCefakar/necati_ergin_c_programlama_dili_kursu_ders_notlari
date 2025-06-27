@@ -717,7 +717,43 @@
             - **Linkage(bağlantı)**, **Extern Linkage(Dış Bağlantı)**, **Intern Linkage(İç Bağlantı)**, **No Linkage(Bağlantısız)**
             - **Extern decleration**
 43. Ders
+    1. C Dilindeki Kullanılan Bazı Önemli Anahtar Sözcükler Devam
+        1. `static` Anahtar Sözcüğünün Global Değişkenlerde Kullanılması ve `extern` Anahtar Sözcüğü Devam
+            - **Kapsam(Scope)**, **Linkage(bağlantı)**
+            - **Unresolved external symbol error**
+            - **Global namespace pollution Problem**
+            - **Decleration** ve **Defination** farkı
+            - **Bağlantı(Linkage)**
+        2. Type Qualifiers(Tür Niteleyicileri)
+            1. `const` Anahta Sözcüğü
+                - **Const Correctness** ve **Const Incorrectness** terimleri
+                - **Mutable** ve **Immutable** terimleri
+                - **Our parameter**, **In parameter** ve **In-out parameter** kavramları
+                - **Mutater** ya da  **Set function** ya da **Setter** kavramı
+            2. `volatile` Anahta Sözcüğü
+                - **Program için kaynak** ve **program dışı kaynak** kavramları
+                - **Memory mapped I/O**
+                - **Donanım yazmaçları(hardware register)**
+                - **Interrupt Service Rutine(ISR)**
+            3. `restrict` Anahtar sözcüğü
+                - **Pointer Aliasing**
+                - **Toolkit**
 44. Ders
+    - **Basic Types**, 
+    - **User Defined Types**
+    1. User Defined Types
+        - **Abstraction(Soyutlama)**
+        - **Data Abstraction(Veri soyutlama)**
+        - **C++ template aracı**
+        1. `struct` Aracı
+            1. `struct` Türünün Yüzeysel İncelenişi
+                - **Alignment(hizalama)** ve **Pedding bytes** kavramı
+            2. Yapı Nesnesinin Elemanlarına Erişim
+                - **member selection dot(nokta eleman seçme) operatörü(`.`)** ve **member selection arrow(ok eleman seçme) operatörü(`->`)** operatörü
+            3. `.` Member Selection Dot Operator
+            4. Structure Initialization
+                - **Trailing comma** kullanımı
+                1. **Designated initializer** Aracının Yapılarla Kullanılışı
 45. Ders
 46. Ders
 47. Ders
