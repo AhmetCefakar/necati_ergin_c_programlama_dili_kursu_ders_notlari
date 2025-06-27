@@ -674,8 +674,48 @@
         2. `free` Fonksiyonu
             - **Free the memory block** ya da **Deallocate** Kavramı
             1. `free` Fonksiyonunun Kullanımında Sık Yapılan Hatalar
-41. Ders
+41. Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Dynamic Memory Managament Devam
+        1. `free` Fonksiyonu Devam
+            1. `free` Fonksiyonunun Kullanımında Sık Yapılan Hatalar Devam
+                - **Dangling pointer**
+                - **Double deletion** ya da **Double free**
+            2. `free` Fonksiyonuna NULL Pointer Geçilmesi
+                - **NULL Pointer Conversion**
+            3. `free` Fonksiyonu ve Adres Döndüren Fonksiyonlar
+                - **Memory leak**
+                - **Backward compatibility(Geriye doğru uyumluluk)**
+                - **Core Syntax**
+                - **Deprecate(Deprecation)**
+        2. `calloc` Fonksiyonu
+        3. `realloc` Fonksiyonu
+    2. Fragmentation
+        - **Heap(C++ dünyasında Free Store)**
+    3. Dynamic Arrays(Dinamik diziler)
 42. Ders
+    1. Dynamic Arrays(Dinamik diziler)
+        - **Amortised constand time**
+        - **Cache friendly(önbellek dostu)**
+        - **Cache miss(Önbelleği ıskalamak)**, **Cache hit(İsabetli Önbellek)**
+        - **Vectorization(SIMD)**
+        - **Push Front**, **Push Back**, **Pop Front**, **Pop Back**, **Insert**, **Erase** ya da **Remove** terimleri
+    2. C Dilindeki Kullanılan Bazı Önemli Anahtar Sözcükler
+        1. `auto` Anahta Sözcüğü
+            1. `auto` Anahta Sözcüğü ve Type Deduction Kullanımı
+        2. `register` Anahtar Sözcüğü
+            - **Register(Yazmaç)**
+        3. `static` Anahtar Sözcüğü
+            1. `static` Anahtar Sözcüğünün Kullanıldığı Yerler
+                1. İlk Kullanım Yeri
+                2. İkinci Kullanım Yeri
+                3. Üçünü Kullanım Yeri
+                    - **Lookup table**
+        4. `static` Anahtar Sözcüğünün Global Değişkenlerde Kullanılması ve `extern` Anahtar Sözcüğü
+            - **Module**
+            - **Scope**
+            - **Storage Duration**
+            - **Linkage(bağlantı)**, **Extern Linkage(Dış Bağlantı)**, **Intern Linkage(İç Bağlantı)**, **No Linkage(Bağlantısız)**
+            - **Extern decleration**
 43. Ders
 44. Ders
 45. Ders
