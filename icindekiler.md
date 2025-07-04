@@ -755,7 +755,43 @@
                 - **Trailing comma** kullanımı
                 1. **Designated initializer** Aracının Yapılarla Kullanılışı
 45. Ders
+    1. Structor Objects and Addresses(Yapı Nesneleri ve Adresler)
+        - **Array to pointer conversion**
+    2. Yapı Nesneleriyle İlgili İşlem Yapan Fonksiyonlar
+        1. Bir Fonksiyonun Parametrelerinin Bir Yapı Nesnesi Olduğu Durumlar
+        2. Bir Fonksiyonun Geri Dönüş Değerinin Bir Yapı Nesnesi Olduğu Durumlar
+            - **Factory Function**
+            - **Excepsion**, **Error handing** nedir
+            - **Programing errors** kavramı
+            - **Static assertion** ve **Runtime assertion** kavramları
+            - **Runtime errors** kavramı
+            - **Function call chain** kavramı
+        3. Yapıları Kullanan Kütüphenelerin Özellikleri
+            - **C tarzı kütüphaneler** ve **OOP tarzı kütüpheneler**
+    3. Yapı Değişkenlerinin Tanımlanmasında Kullanılan Sözdizimi
+        - **Structure tag** 
+        - **Anonymous structure**
 46. Ders
+    1. Standart C Kütüphanesinin `time` Modülü(time Library)
+        - **Epoch** kavramı
+        - **Time-point(Zaman noktası)** kavramı
+        - **Calender Time(Takvim Zamanı)** kavramı
+        - **Broken-down time** kavramı
+        - **Timestamp(Zaman Damgası)** kavramı
+        - **Calendar Time(Takvim Zamanı)** ve **Broken-down time(Ayrıştırılmış zaman bilgisi)** kavramlarının kullanımı
+    2. Yapılar ve Tür Eş Adı(`typedef`) Bildirimleri
+        - **Unevaluated context(İşlem kodu üretilmeyen bağlam)**
+    3. `time` Başlık Dosysındaki Fonksiyonlar
+        1. `time` Fonksiyonu
+        2. `localtime` ve `gmtime` Fonksiyonları
+        3. `ctime`, `asctime`, `strftime` Fonksiyonları
+            1. `ctime`, `asctime` Fonksiyonlarının Kullanımı
+            2. `strftime` Fonksiyonunun Kullanımı
+                - **MFC(Microsoft Fundation Classes)**
+        4. `mktime` Fonksiyonu
+        5. `diftime` Fonksiyonu
+        6. `clock` Fonksiyonu
+    4. Complete Types and Incomplate Types Kavramları
 47. Ders
 48. Ders
 49. Ders
