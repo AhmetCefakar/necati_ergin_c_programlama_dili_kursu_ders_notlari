@@ -650,7 +650,7 @@ int main(void)
 ```
 
 
-👇 Aşağıdaki programda temel seviyede increment/decrement operatörlerinin nasıl operand değerlerini değiştirdiğini anlamak için incelenebilir.
+👇 Aşağıdaki programda temel seviyede increment/decrement operatörlerinin nasıl operant değerlerini değiştirdiğini anlamak için incelenebilir.
 ```C
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -672,12 +672,11 @@ int main(void)
 ```
 
 
-
 ## 11.Ders
 
 ### 1. Önemli Bilgi
 
-❗ **[Dersin en önemli bilgilerinden biri]**
+❗❗❗ **[Dersin en önemli bilgilerinden biri]**
 C dilinde "**Comparison Operators(Karşılaştırma Operatörleri)**" ve lojik operatörler(`!` `&&` `||`) "**int**" türünden değer üretirler. 
 Yani bu operatörler ile oluşturulan bir ifadenin(expression) türü "**int**" türüdür.
 
@@ -1384,8 +1383,8 @@ int main(void)
 int main(void)
 {
     int x = 123;
-    char* ptr1 = &x; // Derleyici burada uyarı mesajı verir.
-    char* ptr2 = (char*)&x; // Derleyici burada uyarı mesajı vermez ve bazen bu şekilde kodlar yazılması gerekecektir.
+    char* ptr1 = &x; // Derleyici burada uyarı iletisi verir.
+    char* ptr2 = (char*)&x; // Derleyici burada uyarı iletisi vermez ve bazen bu şekilde kodlar yazılması gerekecektir.
 }
 ```
 
@@ -1459,10 +1458,10 @@ int main(void)
 {
     int x = 10;
 
-    &x++; // '&(x++)' ile aynı ifadedir ve bu ifade legal değildir çünkü '&' operatörü R-value olan 'x++' ifadesini operand olarak alamaz(sadece L-value ifade alabilir).
-    &++x; // '&(++x)' ile aynı ifadedir ve bu ifade legal değildir çünkü '&' operatörü R-value olan '++x' ifadesini operand olarak alamaz(sadece L-value ifade alabilir).
-    ++&x; // '++(&x)' ile aynı ifadedir ve bu ifade legal değildir çünkü '++' operatörü R-value olan '&x' ifadesini operand olarak alamaz(sadece L-value ifade alabilir).
-    (&x)++; // Bu ifade legal değildir çünkü '++' operatörü R-value olan '&x' ifadesini operand olarak alamaz(sadece L-value ifade alabilir).
+    &x++; // '&(x++)' ile aynı ifadedir ve bu ifade legal değildir çünkü '&' operatörü R-value olan 'x++' ifadesini operant olarak alamaz(sadece L-value ifade alabilir).
+    &++x; // '&(++x)' ile aynı ifadedir ve bu ifade legal değildir çünkü '&' operatörü R-value olan '++x' ifadesini operant olarak alamaz(sadece L-value ifade alabilir).
+    ++&x; // '++(&x)' ile aynı ifadedir ve bu ifade legal değildir çünkü '++' operatörü R-value olan '&x' ifadesini operant olarak alamaz(sadece L-value ifade alabilir).
+    (&x)++; // Bu ifade legal değildir çünkü '++' operatörü R-value olan '&x' ifadesini operant olarak alamaz(sadece L-value ifade alabilir).
 }
 ```
 
@@ -1546,7 +1545,7 @@ C dilinin standart kütüphanesindeki **static storage duration** nesne adresi d
 
 ### 30 Ders 1. Önemli Bilgi
 
-🧠 Veri yapıları ve algoritmalar konusunda ilk öğrenilen sıralama algoritmaları basit oldukalrı için "**bubble sort**", "**selection sort**" ve "**insertion sort**" algoritmalarıdır.
+🧠 Veri yapıları ve algoritmalar konusunda ilk öğrenilen sıralama algoritmaları basit oldukları için "**bubble sort**", "**selection sort**" ve "**insertion sort**" algoritmalarıdır.
 
 
 ### 30 Ders 2. Önemli Bilgi
@@ -1648,7 +1647,7 @@ int main(void)
     typedef int* iptr;
     iptr ip  = &x; // Buradaki statement şuna 'int* ip = &x;' denktir.
     
-    const iptr p  = &x; // Buradaki statement şuna 'int* const p = &x;' denktir, burada beklenilenden farklı olduğu görülecektir ve bu ayrım önemlidir, bunu C milakatlarında büyük ihtimal sorarlar ve C programları yazarken de bu bilgi öenmlidir!
+    const iptr p  = &x; // Buradaki statement şuna 'int* const p = &x;' denktir, burada beklenilenden farklı olduğu görülecektir ve bu ayrım önemlidir, bunu C mülakatlarında büyük ihtimal sorarlar ve C programları yazarken de bu bilgi öenmlidir!
 
     *p = 888; // Legaldir
     p = &y; // Burada sözdizim hatası(syntax error) alınacaktır.
@@ -2612,7 +2611,7 @@ int main(void)
 C dilinin ilk zamanlarında `void` türü yoktu bu nedenden dolayı fonksiyon bildirimlerinde parametre olmadığında boş bırakılıyordu ve fonksiyon çağrılarının doğru yapılma sorumluluğu programcıya bırakılıyordu.
 ```C
 
-// Aşağıdaki iki farklı fonksiyon bildirimi aldığı parametre ve geri dönüş değeri açısındna C++ dili için aynı anlama gelirken C dili için aynı anlama gelmemektedir.
+// Aşağıdaki iki farklı fonksiyon bildirimi aldığı parametre ve geri dönüş değeri açısından C++ dili için aynı anlama gelirken C dili için aynı anlama gelmemektedir.
 void foo(); // Buradaki bildirim C dilinde geriye doğru uyumluluktan dolayı 'foo' fonksiyonunun parametre değişkeni konusunda bilgi vermiyorum anlamına geliyor ve burada C dili için 'implicit int(gizli int)' vardır.
 void bar(void);
 
@@ -3228,7 +3227,7 @@ Dinamik dizilerle ilgili bazı terimler;
 1. Birden fazla kaynak dosyada kendi adıyla kullanılacak ise.
 2. Aynı kaynak dosyada birden fazla fonksiyon içinde kullanılacak ise.
 
-Eğer sadece `static` ömürlü bir değişkene ihtiyacımız varsa o değişken sadece bir fonksiyonu ilgilendiriyorsa yani o fonksiyonun gerçekleştirimiyle ilgiliyse başka fonksiyonlardan o `static` yerel değişkene erişilmesi iligli fonksiyonun çalışmasını bozabileceğindne dolayı sakıncalıdır.
+Eğer sadece `static` ömürlü bir değişkene ihtiyacımız varsa o değişken sadece bir fonksiyonu ilgilendiriyorsa yani o fonksiyonun gerçekleştirimiyle ilgiliyse başka fonksiyonlardan o `static` yerel değişkene erişilmesi iligli fonksiyonun çalışmasını bozabileceğinden dolayı sakıncalıdır.
 
 
 
@@ -3331,7 +3330,7 @@ int main(void)
 
 ### 44 Ders 3. Önemli Bilgi
 
-❗❗❗ Bir `struct` veri türü bellekte tek bir blok olarak, yapının üyeleri yukarıdan aşağıya doğru sıralı olacak biçimde derleyiciden derleyiciye değişmeyecek biçimde sıralı olmak zorundadır(donanımsal olarak veri tersten sıralanıyor olabilir ama yazılım dili soyutlaması açısındna bu bir fark oluşturmaz) </br>
+❗❗❗ Bir `struct` veri türü bellekte tek bir blok olarak, yapının üyeleri yukarıdan aşağıya doğru sıralı olacak biçimde derleyiciden derleyiciye değişmeyecek biçimde sıralı olmak zorundadır(donanımsal olarak veri tersten sıralanıyor olabilir ama yazılım dili soyutlaması açısından bu bir fark oluşturmaz) </br>
 ❗❗❗ Bir `struct` veri türünden oluşturulan değişkenin fiziksel bellek adresi `struct` veri türünün ilk üyesinin fiziksel bellek adresiyle aynıdır. </br>
 
 
@@ -3470,4 +3469,551 @@ int main()
 
 ❗❗❗ **Designated initializer** hem diziler hem de yapılar için kullanılabilir, aşağıdaki kısa programlarda bu durum incelenebilir.
 
+
+## 45.Ders
+
+### 45 Ders 1. Önemli Bilgi
+
+❗❗❗ `->` operatörünün sol operatörünün **bir yapı nesnesinin adresi** olmak zorundadır.
+
+❗❗❗ `->` operatörünün sol operandı bir yapı nesnesinin adresini tutan bir pointer değişken olmak zorunda değildir, sol operant **bir yapı nesnesinin adresi** olmak zorundadır, adres olan herhangi bir **L-value** ya da **R-value** ifade sol operant olabilir, burayı anlamak çok önemlidir.
+
+
+👇 Aşağıdaki programda `->` operatörünün sol operandının neler olabileceği incelenebilir.
+```C
+#include <stdio.h>
+
+struct Person{
+    int id;
+    char name[20];
+    char surname[20];
+};
+
+int main(void)
+{
+    struct Person per = { 5612, "ad", "soyad" };
+
+    // Aşağıdaki gibi iki farklı biçimde bir yapı nesnesi elemanlarına erişilebilir.
+    (&per)->id = 8754;
+    per.id = 342;
+}
+```
+
+
+👇 Aşağıdaki programda `struct Person` türünden bir dizi nesnesinin adının kullanıldığında **array to pointer conversion** uygulanmasından dolayı dizi adının dizinin ilk elemanının adresine dönüştürüldüğü incelenebilir.
+```C
+#include <stdio.h>
+
+struct Person{
+    int id;
+    char name[20];
+    char surname[20];
+};
+
+int main(void)
+{
+    struct Person per ar[5];
+
+    // Aşağıdaki iki statamnet legal'dir, kullanımı doğrudur ve aynı anlama gelmektedir.
+    ar-> = 123;
+    ar[0].id = 123;
+
+    // Aşağıdaki iki statamnet legal'dir, kullanımı doğrudur ve aynı anlama gelmektedir.
+    (ar + 3)->id = 45;
+    ar[3].id = 45;
+}
+```
+
+### 45 Ders 2. Önemli Bilgi
+
+❗❗❗ Bir fonksiyonun parametresi bir yapı türü olabilir fakat bu durumda ilgili fonksiyonun bir yapı nesnesiyle çağırılması gerekir yani bu bir **call by value** çağrısıdır ve parametresi bir yapı türünden olan bir fonksiyona yapılan çağrıda tek geçerli argüman ifadesi aynı türden bir yapı nesnesi olabilir, bu da bir blok kopyalamasına neden olur.
+
+
+👇 Aşağıdaki programdaki gibi bellek boyutu fazla olmayan `struct Point` türünün bellek boyutu incelenebilir, buradaki yapı türü gibi bellek boyutu fazla olmayan türlerden nesneleri parametre olarak alan fonksiyon bildirimlerinin yazılmasında kopyalama maliyeti olmayacaktır, kopyalama maliyeti bellek boyutu büyük yapı türlerinde olmaktadır.
+```C
+#include <stdio.h>
+
+struct Point {
+    float f1;
+    float f2;
+};
+
+int main(void)
+{
+    printf("sizeof(struct Point) = %zu\n", sizeof(struct Point));
+}
+```
+
+
+👇 Aşağıdaki programda C++ dilinde yazılmış olan programda `std::my19937` türünden bir nesnenin bellek boyutunun 5000 byte olduğu incelenebilir. Buradaki program herhangi bir türün bellek boyutunun çok büyük olabileceğini görmek için yazılmıştır.
+```C++
+#include <stdio.h>
+#include <random>
+
+void foo(std::my19937);
+
+int main(void)
+{
+    printf("sizeof(my19937) = %zu\n", sizeof(std::my19937)); // Burada 'std::my19937' bellek boyutunun '5000' olduğu görülecektir.
+
+    std::my19937 eng;
+    foo(eng); // Burada 5000 byte büyüklüğündeki bellek bloğu kopyalanacaktır, bu maliyet çok fazla.
+}
+```
+
+### 45 Ders 3. Önemli Bilgi
+
+❗❗❗ Diğer derslerden de bildiğimiz gibi, bir fonksiyondan geriye döndürülen değerin **otomatic storage duration** oluşu **ub** durumuna neden olacaktır ve böyle bir kullanımdan kaçınılmalıdır.
+
+👇 Aşağıdaki programda geriye bir yapı nesnesinin adresini döndüren bir fonksiydan geriye döndürülen yapı nesnesinin **otomatic storage duration** olması durumunun tanımsız davranış olduğu incelenebilir.
+```C
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+    int id;
+    char name[20];
+    char surname[20];
+};
+
+// Aşağıdaki fonksiyondan geriye döndürülen yapı nesnesi otomatic ömürlüdür bu nedenle 'ub' durumu oluşmasına neden olur, bu biçimde bir fonksiyon yazılmamalıdır.
+struct Person* create_person(int id, const char* pname, const char* psurname)
+{
+    struct Person ret;
+
+    ret.id = id;
+    strcpy(ret.name, pname);
+    strcpy(ret.surname, psurname);
+
+    return &ret; // Burada adresi döndürülen nesne 'otomatic ömürlü' bir nesne olduğu için bu adresin bir şekilde fonksiyonu çağıran yerde kullanılması tanımsız davranışa neden olacaktır.
+}
+
+void print_person(const struct Person* ptr)
+{
+    printf("%d %s %s\n", ptr->id, ptr->name, ptr->surname);
+}
+
+int main(void)
+{
+    struct Person* per = create_person(4232, "suha", "dincer"); // 'create_person' fonksiyonundan geriye döndürülen nesne 'otomatic ömürlü' bir nesnedir.
+    print_person(per); // Buradaki 'per' gösterici nesnesi 'dangling pointer' durumundadır. Microsoft derleyicisi burada 'warnging C4172: returning address of local variable or temporary : ret' uyarısını verecektir.
+}
+```
+
+🧠 Derleyicilerin uyarı iletilerini "**Treat warning as a error**" gibi bir anahtar(switch) oluyor, bu anahtarı açarak uyarıların da hata olması sağlanmış olur.
+
+
+### 45 Ders 4. Önemli Bilgi
+
+❗❗❗ Yapı nesnesi adresi döndüren fonksiyonlar tanımsız davranışa neden olmamak için aşağıdaki ömür özelliğine sahip bir nesne döndürebilir;
+1. Static ömürlü nesne adresi döndürebilir.
+    1. Static ömürlü gloabal değişken adresi döndürebilir.
+    2. Static ömürlü local değişken adresi döndürebilir.
+2. Dinamik ömürlü nesne adresi döndürebilir.
+3. Çağıran koddan alınan nesne adresini döndürebilir.
+
+### 45 Ders 5. Önemli Bilgi
+
+❗❗❗ Bir Fonksiyonun işini yapması sırasında hata alınırsa ne yapmak gerekir;
+1. Bir Fonksiyonun işini yapamaması nedeni bir kodlama hatası mı?
+    - Evet ise => Kodlama hatasını bulup düzeltmek ve yeniden programı derlemek gerekmektedir, bu türden hatalara teknik olarak **programing errors** denilmektedir.
+    - Peki, kodlama hatalarını nasıl bulacağız;
+        - **Static assertion**
+        - **Runtime assertion**
+2. **Runtime errors**, çalışma zamanında oluşan hatalardır, bu hatalar kodda bir hata olmamasına rağmen dışsal nedenlerden dolayı programda oluşan hatalardır, bu türden hatalara C#, Java, C++ gibi dillerde **exception** deniliyor.
+    C dilinde standardında hataları yönetmek için bir araç seti olmadığı için hata yönetimi çoğunlukla fonksiyonu çağıran koda bırakılmaktadır. </br>
+    C dilinin bir fonksiyonda hata olduğunda aşağıdaki yöntemlerle oluşan hata çağıran koda bildirilmektedir ki fonksiyonu çağıran kod oluşan hatayı işleyebilsin;
+    1. Geri dönüş değeri yoluyla bildirilebilir.
+    2. Global bir değişkenin değerini değiştirerek bildirilebilir.
+    3. Kendisine gönderilen bir adresteki hata taşıyacak nesneyi değiştirerek bildirilebilir.
+
+
+## 46.Ders
+
+### 46 Ders 1. Önemli Bilgi
+
+❗❗❗Aşağıdaki bilgiler önemlidir
+- `time_t` tür eş adının hangi türe karşılık geleceği derleyiciye bırakılmıştır, derleyiciye göre `long long` ya da `long` türüne karşılık geliyor olabilir.
+- C standardı **epoch** değerinin ne olacağının kararını derleyiciye bırakılmıştır, Unix/Linux sistemlerinde **epoch** değeri olarak "_01:01:1970 00:00:00_" tarihi kullanılıyor ve sistemlerin çoğunda **epoch** değeri "_01:01:1970 00:00:00_" tarihidir.
+- `time.h` modülündeki `struct tm` yapı türü **C tarzı kütüphane** yapı türüdür ve yapıdaki tüm üyelerin ne olduğunun programcı tarafından bilinmesi gerekmektedir.
+
+
+### 46 Ders 2. Önemli Bilgi
+
+❗❗❗ 👇 Aşağıdaki programda **anonymous structure** bildiriminin **pointer** türünden yapılarak ilgili `struct` türünün sadece dinamik ömürlü bir nesne olarak tanımlanmaya zorlanması incelenebilir.
+```C
+#include <stdlib.h>
+#include <stdio.h>
+
+// Aşağıdaki yapı türünün bir adı yok, bir eş adı da yok, ancak bu yapı türüne pointer türünün eş adı var.
+// Aşağıdaki gibi bir yapı bildirimi yapılırsa, bir adı olmayan bu yapı türünden, otomatik ömürlü ve static ömürlü değişken tanımlama şansımız yoktur sadece dinamik ömürlü bir nesne tanımlanabilir.
+typedef struct {
+    int a, b, c;
+} *NecPtr;
+
+
+int main(void)
+{
+    NecPtr p;
+
+    printf("%zu\n", (sizeof(p)); // Burada standart çıktı akımına sistemdeki pointer türünün byte değeri gönderilecektir.
+    printf("%zu\n", (sizeof(*p)); // Burada standart çıktı akımına sistemde 'int' türü 4 byte olduğunda en az '12\n' değeri gönderilecektir.
+}
+```
+
+
+### 46 Ders 3. Önemli Bilgi
+
+❗❗❗ İşlem kodu üretilmeyen durumlarda tanımsız davranış oluşturan ifadeler kullanıldığında işlem kodu üretilmediği için **ub** durumu oluşmamaktadır.
+
+
+❗❗❗ 👇 Aşağıdaki programda işlem kodu üretilen ve üretilmeyen durumlarda **ub** olup olmayacağı incelenebilir.
+```C
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void)
+{
+    int ary[12] = { 0 };
+
+    int x = ary[21]; // Burada 'ary' dizisi taşırıldığı için 'ub' durumu oluşur.
+    size_t sz = sizeof(ary[21]); // Burada işlem kodu üretilmediği için 'ub' de yoktur.
+
+    int* p;
+    int* ptr = NULL;
+
+    // Aşağıdaki durumların hiçbirinde 'ub' yoktur.
+    printf("%d\n", sizeof(ary[765]));
+    printf("%zu\n", sizeof(p));
+    printf("%zu\n", sizeof(*p));
+    printf("%zu\n", sizeof(*ptr));
+}
+```
+
+
+❗❗❗ 👇 Aşağıdaki programda **anonymous structure** bildiriminin **pointer** türünden yapılarak ilgili `struct` türünün sadece dinamik ömürlü bir nesne olarak tanımlanmaya zorlanması incelenebilir.
+```C
+#include <stdlib.h>
+#include <stdio.h>
+
+// Aşağıdaki yapı türünün bir adı yok, bir eş adı yok, ancak yapı türüne pointer türünün eş adı var.
+// Aşağıdaki gibi bir yapı bildirimi yapılırsa, bir adı olmayan bu yapı türünden, otomatik ömürlü ve static ömürlü değişken tanımlama şansımız yoktur sadece dinamik ömürlü bir nesne tanımlanabilir.
+typedef struct {
+    int a, b, c;
+} *NecPtr;
+
+int main(void)
+{
+    // Kütüphenelerde kullanılan bir C idiyomu
+    NecPtr p = (NecPtr)malloc(sizeof(*p)); // Buradaki 'p' değişkeninin türü sadece 'NecPtr' tür eş adıyla erişile bilen 'struct' türünden değerdir. 'p' değişkeni 'NecPtr p' ile tanımlanan değişkendir, aynı statament içinde aynı değişken kullanılıyor.
+}
+```
+
+
+### 46 Ders 4. Önemli Bilgi
+
+❗❗❗ Prototipi `struct tm* localtime(const time_t *);` olan fonksiyon dışarıdan `time_t*` türünden adres değeri alır ve `time_t` türünden `struct tm` türüne dönüşüm yapıp geriye **static storage duration** özellikteki `struct tm` türünden bir nesne adresini döndürmektedir.
+
+
+### 46 Ders 5. Önemli Bilgi
+
+❗❗❗ `ctime`, `asctime` fonksiyonlarıyla ilgili aşağıdaki bilgiler önemlidir;
+- Bu fonksiyonlar 26 karakter uzunluğunda sonunda new-line(`\n`) karakteri olan yani **yeni satırla sonlanan yazı(new-line terminated byte stream)[bu adı be uydurdum dikkate almayabilirsin]** bir yazı adresi döndürür.
+- Her iki fonksiyon da aynı static ömürlü dizinin adresini döndürür.
+- Yazının formatı önceden belirlenmiştir, derleyiciye bağlı değildir, değiştirilemez.
+
+
+### 46 Ders 6. Önemli Bilgi
+
+❗❗❗ **Incomplate type** kavramı daha çok **kullanıcı tanımlı türler(user defined types)** ile ilgilidir. **Kullanıcı tanımlı türler(user defined types)** olmayan türlerden sadece **void pointer türü(`void*`)** türü **incomplate type** diğerleri **complete type**.
+
+
+### 46 Ders 7. Önemli Bilgi
+
+❗❗❗ **incomplate type** ve **complate type** türlerle ilgili aşağıdaki tespitler önemlidir;
+- Bazı bildirimler ya da bazı ifadeler, söz konusu türün **incomplate type** olması durumunda da geçerlidir.
+- Bazı ifadelerin geçerli olması için kullanılan türün **complate type** olması zorunludur.
+
+**Incomplate type** kullanabilen ifadelerde çoğu zaman türün **complate type** yapılması istenmez.
+
+❗❗❗ Eğer bir modüldeki bir ya da bir kaç varlığın kullanılması gerekiyorsa, ilgili modülün kaynak dosyaya eklenmesi yerine sedece kaynak dosyadaki gerekli olan veri türleri **incomplate type** olarak eklenebilir ve fonksiyonların bildirimleri yazılabilir.
+
+❗❗❗ Bir kaynak dosyasına bir çok başlık dosyasınının eklenmesi aşağıdaki sorunlara neden olabilir;
+- Büyük projelerde derleme zamanı uzar(extended compile time).
+- Gereksiz modüllerin eklenmesi gereksiz yere Bağımlılık oluşturmaktadır(kaynak dosyalarının başlık dosyalarına bağımlılığı). Bağımlılıklarda bir başlık dosyasında yapılan değişikliğin başka bir dosyada da değişiklil yapılmasına neden olabilir.
+
+
+En çok yapılan hata, programcının **incomplate type** kavramının ne olduğunu bilmediği ve anlamadığı için bir başlık dosyasının eklenmesinin zorunlu olduğunu düşündüğü için o başlık dosyasını kaynak koda ekliyor(`#include` ile). </br>
+Bir başlık dosyasındaki bir kaç türü kullanmak için `#include` işlemi ile o türlerin bildirimlerinin yer aldığı başlık dosyasını eklemek yerine o türlerin kullanılacağı dosyaya o türlerin bildirimlerinin **incomplate type** olarak eklenmesi yeterli olacaktır, bu işlem ile eklenen **incomplate type** türler bir bağımlılık oluşturmamaktadır.
+
+
+## 47.Ders
+
+### 47 Ders 1. Önemli Bilgi
+
+❗❗❗ C ve C++ dillerinde şu ilke kabul görür: "_Bir **incomplate type** işini gördüğü sürece **complate type** kullanma._". Bir türü sadece mecbur olunduğunda zaman **complate type** haline getirmek tercihedilir.
+
+❗❗❗ **Incomplate type** kullanıldığında gereksiz bağımlılıkların oluşmasının önüne geçilmektedir, bu önemli bir bilgidir ve ilerideki derslerde ve C programlarını yazarken önemli olacaktır.
+
+
+### 47 Ders 2. Önemli Bilgi
+
+❗❗❗ Yapının elemanları iki farklı biçimde olabilir, bunların aşağıdaki gibidir;
+- C tarzı kütüphanelerde yapıların elemanları **müşteri(client)** kodlara tamamen açıktır ve yapıyı kullanacak yazılımcıların kullandıkları yapıların üyeleriyle ilgili derin bilgiye sahip olması gerekiyor. 
+- OOP tarzı kütüphanelerde yapının elemanları client code tarafından kullanılmaz;
+    1. Yapının elemanları görünür, kullanılması sözdizimi(snytax) hatası oluşturmaz ancak kütüphenenin dokümanında bildirdiği biçimde sözleşme gereği(hizmet veren kodla hizmet alan kod arasındaki bir sözleşme gereği) kullanıcı kodlar yapının elemanlarına erişmez.
+    2. Yapının elemanları zaten client koda gösterilmez, bu yolla kullanıcı kod ilgili yapının dışayıya kapalı olan üyelerine erişemez ya da onları göremez.
+
+
+👇 Aşağıdaki programdan C tarzı kütüphene özelliğinde `struct tm` türünün kullanımı incelenebilir.
+```C
+#include <stdio.h>
+#include <time.h>
+
+int main(void)
+{
+    struct tm x;
+
+    x.tm_mon = 1; // Yapının 'tm_mon' üyesinin değerleri '[0,11]' arasında bir değerde olması gerekiyor ve '1' değeri de şubat ayına karşılık gelmektedir, programcı bu bilgiyi bilmek zorundadır yoksa yapıyı doğru kullanamaz.
+    x.tm_year = 2025 - 1900; // Yapının 'tm_year' üyesinin değerleri '1900' yılından sonraki yılları ifade etmektedir, programcı bunu bilmezse programı doğru biçimde yazamaz.
+}
+```
+
+
+### 47 Ders 3. Önemli Bilgi
+
+❗❗❗ OOP biçiminde kütüpheneler kullanılarak aşağıdaki faydalar elde edilmektedir;
+- Öğrenme yükü azalıyor.
+- Tutarsız değerler oluşturulması sorunu engellenebiliyor, kütüphanedeki yapı nesnelerinin üyelerinin detaylı bilgisine sahip olunması gerekmeyecektir.
+- En önemli fayda ise: Elemanlar değişirse elemanları kullanan kodun değişmesi gerekmeyecek ve bir çok durumda kaynak kodun **yeniden derlenmesi(recompile)** gerekmeyecektir. Büyük projelerde bağımlılıklar yüzünden kaynak kodların tekrar tekrar derlenmesinin gerekmesi gereksiz zaman kaybına neden olmaktadır.
+
+❗❗❗ OOP biçiminde kütüpheneler kullanıldığında yapıların elemanlarının dışarıdan gizlenmesi ya da dışarıdan erişiminin dokümantasyon ile kısıtlanması araya ayrıca bir soyutlama katmanı eklenmesi anlamına geleceği için bazı durumlarda maliyeti arttırabilir. </br>
+Elemanları göstermemenin en sıradan maliyeti: Bazı nesnelerin daha önce öğrenilen `malloc` fonksiyonu ile oluşturulma zorunluluğunu gerektirmesi ve bu biçimdeki bir işlemin dinamik bellek yönetimi gerektirmesinden dolayı maliyete sahip olmasıdır.
+
+
+### 47 Ders 4. Önemli Bilgi
+
+❗❗❗ C dilinde bir kütüphane modülünü yazarken çok özel bir durum yoksa iki ayrı dosya oluşturuyoruz;
+1. **Kullanıcı(client)** kodlar için oluşturulan, **kullanıcı(client)** kodların kullanması için bildirimleri içeren **başlık(header)** dosyası.
+2. Kodun kendisini içeren **kaynak(implementation, code, source)** dosyası.
+
+
+### 47 Ders 5. Önemli Bilgi
+
+❗❗❗ Yazılmış olan bir modülün başkaları tarafından kullanılabilmesini sağlamak için iki farklı yol izlenebilir, bunlar;
+1. Mesela "date" modülü paylaşılacaksa `date.h` dosyasının kendisi ve `date.c` kaynak dosyanın sadece derlenmiş hali verilebilir. Bu yöntemde modülü kullanacak programcıya kaynak kod dosyası verilmediği için progrmacı kaynak dosyada değişiklik yapamaz.
+2. Mesela "date" modülü paylaşılacaksa `date.h` dosyasının kendisi ve `date.c` kaynak dosyanın kendisi verilebilir. Bu yöntemde modülü kaynak kodlarıyla birlikte alan programcı modülü istediği gibi kullanıp kaynak kod üzerinde istediği gibi değişiklikler yapabilir. Bu yöntemde kaynak kod **open source** olarak paylaşılmış olur. Açık kaynak olan kodların kullanım koşulları kodun lisansına bağlıdır ama kod lisanslarına bu derste değinilmeyecektir.
+
+
+❗❗❗Bir kütüphane modülünü yazmaya başlarken en tipik hatalardan biri modülün yazımına ilk önce gerçekleştirim dosyasının("**.c**") yazımıyla işe başlanmasıdır, ilk önce yapılması gereken bir arayüz oluşturan başlık dosyasının yazımından başlanmasıdır.
+
+❗❗❗ Bir başlık dosyası oluşturduğumuzda mutlaka ve mutlaka bir başlık dosyasını bir client code tarafından birden fazla defa **dahil edilmesini(include)** önlemek için önlem almalıyız. Birden fazla defa aynı "**.h**" dosyasının eklenmesi sözdizimi(syntax) hatasına neden olur.
+
+❗❗❗ C programlarında yazılmış olan bir modül birden fazla kaynak dosyaya dahil edilmiş olabilir, bu durumda iç içe bir yapıda farklı dosyalar aynı kaynak dosyayı eklemek isteyecektir, eğer kütüphanelerin başlık dosyalarında **Multiple Include Guards(Header Include Guards)** uygulanmadıysa bu sözdizim(syntax) hatasına neden olacaktır.
+
+
+### 47 Ders 6. Önemli Bilgi
+
+🔥🔥🔥🔥🔥 Aşağıdaki bilgileri tam olarak anlamak çok önemlidir, burayı tam anlamadan programlama konusunda daha üst bir seviyeye çıkılamaz, buradaki bilgiyi anlamak OOP yaklaşımının neyi getirip neyi götürdüğünü anlamak için bir temel oluşturacaktır;
+❗❗❗ C dilinde yapı türlerinden elde edilen nesnelerin üyelerinin dışarıdan erişime kısıtlanması durumunda soyutlamayı arttırmış oluruz ve böylece sadece soyutlamayı arttırmış olmuyoruz aynı zamanda üretilecek makine kodununda olacak işlem sayısını da arttırmış oluyoruz. </br>
+❗❗❗ Yukarıdaki nedenlerden dolayı C dilinde soyutlamayı arttırdığımız zaman sadece soyutlamayı arttırmış olmuyoruz aynı zamanda maliyeti de arttırıyoruz, işte bu nedenden dolayıdır ki **sistem programlama**, **ağ(networking) programlama**, **oyun programlama**, **yoğun performanslı işlem gerektiren programlamalarda** yapının elemanları gizlenmemektedir çünkü soyutlamadan oluşacak fazladan makine kodlarını istenmemektedir.
+
+
+### 47 Ders 7. Önemli Bilgi
+
+❗❗❗ C++ dilinin bazı araçları(C dilinde de benzer bazı araçlar var) bir yapının elemanlarına erişmeyi hem kısıtlarken aynı zamanda çok verilmi bir kodun oluşturmasını sağlayabiliyor.
+
+
+### 47 Ders 8. Önemli Bilgi
+
+❗❗❗ Bir fonksiyona yapılan bir çağrıda fonksiyona geçilmek istenilen argümanlar hatalı olduğu durumlarda izlenecek iki yol var, bunlar;
+1. Hatalı değ geçilen fonksiyon çağrısı kendi modülümüze aitse o zaman hatalı fonksiyon çağrısının yapıldığı yerin bulunması ardından da düzeltilmesi gerekir.
+2. Hatalı değ geçilen fonksiyon çağrısı **kullanıcı(client) kodlardan** geliyorsa bu durumda da iki farklı seçenekten biri tercih edilebilir;
+    1. Hatalı fonksiyon çağrılarının yapılmasının sorumluluğu **kullanıcı(client) koda** bırakılabilir, bu durumda modülde bir işlem yapılması gerekmeyecektir ve kullanıcı hatalı değerler gönderdiğinde bu **ub** durumuna da neden olabilir.
+    2. Hatalı fonksiyon çağrılarının yapılması durumlarını modülün fonksiyonunda yapabiliriz, bu durumda fonksiyona geçilen argümanlar tek tek kontrol edilecek ve değerler hatalı olsa bile bir düzenleme yapılabiliyorsa düzenleme yapıldıktan sonra fonksiyon işlemine devam edip bitirecek ama işleme devam edilemezse bunun da **kullanıcı(client) koda** bildirilmesi gerekiyor.
+
+
+❗❗❗ Bir fonksiyondan geriye fonksiyonun yaptığı işlemin başarılı ya da başarısız olması durumunu fonksiyon çağrısını yapan koda bildirmek gerekiyor, peki bunu nasıl bildirecek diye düşünülürse bu başka bir dersin konusu ve bunu yapmak için birden fazla farklı yol var. </br>
+Mesela en çok kullanılan **yaklaşım(convension)** olarak böyle `Date* set_date2(Date*, int d, int m, int y);` bir **setter fonksiyon** bildiriminde fonksiyona değerleri atanması için geçilen nesne tekrardan geriye döndürülebilir, fonksiyondan geriye dönen adres kendisine geçilen adres ile aynı ise işlem başarılı ama **NULL pointer** ise işlem başarısız anlamına gelecektir.
+
+👇 Aşağıdaki programdan `set_date2` fonksiyon çağrısı yapıldığında işlem başarılı olmama durumunda nasıl bir kod yazılabileceği incelenebilir.
+```C
+#include "date.h"
+
+int main(void)
+{
+    Date myDate; // 'myDate' adında 'Date' türünden(esasında tür eş adı) bir yapı nesnesi tanımlanıyor(tanımlanıyor çünkü derleyici bu değişken için bellekte yer ayıracaktır).
+
+    // 'set_date2' fonksiyonu işini başarılı biçimde yapamazsa geriye 'NULL pointer' dönecek ve bu durumda hata olduğu anlaşılacak ve ona göre yapılacak bazı işlemler yapılabilir.
+    if(!set_date2(&myDate, 48, 4, 1012)){
+        // error handling code 
+    }
+}
+```
+
+❗❗❗ 👆 Yukarıdaki programdaki `set_date2` fonksiyon çağrısında olduğu gibi her seferinde hata var mı yok mu diye kontrol ettirilmesi kodu çok daha karmaşık hale getirecektir, bu C'nin küçük bir dil olmasının sonuçlarından biri bu, C++, Java, C# gibi dillerin standardında **exception handing** aracıyla bu gibi durumlar daha kolay ele alınabilmektedir.
+
+
+### 47 Ders 9. Önemli Bilgi
+
+❗❗❗ C kursunda bir kaç defa tekrarlanan bir farkındalık olarak "**_KOD TEKRARI FELAKETTİR_**" tümcesine dikkat edilmelidir; </br>
+Bir kodun kalitesinin ne olduğunu kodun ne kadar az tekrarlı olduğuna bakarak anlayabiliriz(kod tekrarı bazı özel durumlarda gerekli olabiliyor). </br>
+Tekrar eden kodun sorunları;
+- Kodun tekrar ettiği her yerde ayrı ayrı bağlamlarda her takrar eden yer için ayrı bir test kodu yazılması gerekecektir.
+- Kodda bir değişiklik(lojik) yapılması ya da koda bir ekleme yapılması gerekirse o kadar fazla kod yazılması gerekecektir, bu da gereksiz iş yükü anlamına gelmektedir.
+- Kodun tekrar etmesi aynı kod bir kaç farklı yerde olduğu için değişiklik yapılması gerektiğinde bazı yerlerde değişiklik yapılıp bazı yerlerde o değişikliğin yapılması yapılmazsa hatalara neden olacaktır.
+- Kod tekrar kullanılabilir(reusable) yapılmamış olur, tekrar eden kod kendisini iyi açıklayamaz ve mecburen yorum satırlarıyla açıklamak gerekecektir, eğer tekrar eden kod bir fonksiyona alınırsa fonksiyon adından ilgili kodun ne iş yaptığı anlaşılabilir durumda olabilirdi.
+
+
+### 47 Ders 10. Önemli Bilgi
+
+❗❗❗ Tekrar eden kodu bir yere toplayıp sıklıkla o kodu bir fonksiyon haline getirmek yüksek seviyede soyutlama sağlayacaktır, bu da İngilizce olarak "_**abstraction at a higher level**_" biçiminde ifade edilir.
+
+
+### 47 Ders 11. Önemli Bilgi
+
+❗❗❗ Fonksiyonlara birden fazla görev verilmemelidir, İsviçre çakısı gibi fonksiyonlar yazılmamalıdır, verilirse aşağıdaki gibi sorunlarla karşılır;
+- Fonksiyonun adı yaptığı işi açıklayamayacak hale gelecektir.
+- Fonksiyon birden fazla işi yaptığı için o fonksiyonu kullanan koda kullanmak istemeyaceği bazı işlemlerin zorla kullandırılması gibi istenmeyen bir durum oluşacaktır.
+- Fonksiyonu test etmek için daha fazla test kodunun yazılması gerekecektir.
+- **Takrar kullanılabilirlik(reusability)** olumsuz etkilenecektir.
+
+
+## 48.Ders
+
+### 48 Ders 1. Önemli Bilgi
+
+❗❗❗ Bir yapının elemanı, kendi türünden olamaz, bunun nedeni bu biçimdeki bir kullanımda yapının kendi türünden üyenin **incomplate type** durumunda olmasıdır. </br>
+❗❗❗ Bir yapının elemanı, kendi türünden gösterici olabilir.
+```C
+#include <stdio.h>
+
+struct Nec1 {
+    int x, y;
+    struct Nec1 nc; // 'struc Nec' is an incomplate type here. Burada sözdizim(syntax) hatası vardır.
+};
+
+struct Nec2 {
+    int x, y;
+    struct Nec2* p; 
+};
+
+int main(void)
+{
+    
+}
+```
+
+### 48 Ders 2. Önemli Bilgi
+
+❗❗❗ Bazı veri yapılarının(linked-list, tree vb.) gerçekleştirimlerinde dinamik olarak oluşturulmuş yapı nesnelerinin kendi türünden bir nesnenin pointer üyesi olduğu durumlar sıklıkla kullanılmaktadır.
+
+
+### 48 Ders 3. Önemli Bilgi
+
+❗❗❗ 👇 Aşağıdaki programda iç içe yapı kullanımının daha sade bir hali incelenebilir.
+```C
+#include <stdio.h>
+
+struct Nec1 {
+    int x, y;
+
+    // Aşağıdaki yapı nested olarak C11 standardından sonra adı olmadan da tanımlanabilmektedir. 
+    struct {
+        int a, b, c;
+    };
+
+    // En önemli soru, peki neden aşağıdaki gibi kullanmıyoruz da yukarıdaki gibi kullanıyoruz, arada ne fark var, bu sorunun cevabını 'union' konusuna gelince öğreneceğiz.
+    // struct {
+    int a, b, c;
+    // }; 
+};
+
+// int '4 byte' ise 'struct Erg' bellek büyüklüğü en az '12 byte' olacaktır.
+// int '4 byte' ise 'struct Nec1' bellek büyüklüğü en az '20 byte' olacaktır.
+
+int main(void)
+{
+    printf("sizeof(struct Nec) = %zu\n", sizeof(struct Nec));
+
+    struct Nec1 nec1;
+    nec1.a;
+    nec1.b;
+    nec1.c;
+}
+```
+
+### 48 Ders 4. Önemli Bilgi
+
+❗❗❗ C dilinin standardo bir yapının üyelerinin bellekte sıralı olacağını kesin olarak belirtmektedir. </br>
+👇 Aşağıdaki programda yukarıdaki kesinliğin doğruluğu görülebilir.
+```C
+#include <stdio.h>
+
+struct Nec1 {
+    int x;
+    double y;
+    char str[20];
+};
+
+int main(void)
+{
+    struct Nec nec;
+
+    printf("%p\n", &nec.x);
+    printf("%p\n", &nec.y);
+    printf("%p\n", nec.str); // Burada 'array decay' uygulanıyor ve 'nec.str' ifadesi '&nec.str[0]' ifadesine dönüştürülüyor.
+
+    // Aşağıda yazdırılan iki ifadenin de adresi sayısal olarak aynı olmak zorundadır.
+    printf("%p\n", &nec);
+    printf("%p\n", &nec.x);
+}
+```
+
+
+### 48 Ders 5. Önemli Bilgi
+
+❗❗❗ 👇 Aşağıdaki programdaki gösterilen **alignment(hizalama)** konusu incelenebilir, bu kavran sonraki derslerde detaylı olarak incelenevektir. 
+```C
+#include <stdio.h>
+
+struct Nec {
+    char c1;
+    int i;
+    char c2;
+};
+
+int main(void)
+{
+    printf("sizeof(struct Nec) = %zu\n", sizeof(struct Nec)); // Burada 'struct Nec' türünden nesnenin elemanlarının bellekte sıralı olacağı kesin ama 'alignment(hizalama)' durumundan dolayı bellek boyutu beklenenden büyük olabilir.
+}
+```
+
+
+### 48 Ders 6. Önemli Bilgi
+
+❗❗❗ 👇 Aşağıdaki programda iç içe bildirilen yapılardan iç yapının ad arama(name lookup) işleminde görünür olduğu her yerde de görünür olduğu anlaşılmalıdır.
+```C
+#include <stdio.h>
+
+struct Nec {
+    int x, y;
+
+    struct Erg {
+        int a, b, c;
+    }e1; 
+}
+
+struct Erg e1, e2;  // Bu biçimde değişken bildirimi C dilinde legal ama C++ dilinde legal değildir.
+
+int main(void)
+{
+    struct Erg x; // Bu biçimde değişken bildirimi C dilinde legal ama C++ dilinde legal değildir.
+    struct Erg* ptr;  // Bu biçimde değişken bildirimi C dilinde legal ama C++ dilinde legal değildir.
+
+    // struct Nec::Erg; // Bu kullanım C++ dilinde legaldir.
+}
+```
 

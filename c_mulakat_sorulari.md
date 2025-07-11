@@ -2117,7 +2117,6 @@ int main(void)
 }
 ```
 
-
 ## 40.Ders
 
 ### 40.Ders 1. Mülakat Sorusu
@@ -2524,7 +2523,6 @@ int main(void)
 ```
 
 
-[12:05:30]
 👇 Aşağıdaki programdan 5 milyon elemanlı bir tam sayı dizisini standart `qsort` işleviyle küçükten büyüğe sıralayan ve sıralama işleminin kaç saniye sürdüğünü **standard output** tarafna gönderen program incelenebilir.
 ```C
 #include <stdio.h>
@@ -2569,3 +2567,12 @@ int main(void)
 ```
 
 
+## 48.Ders
+
+### 48.Ders 1. Mülakat Sorusu
+
+📌 Kaliteli bir mülatata girildiğinde hangi programlama dili olursa olsun, programlamayla ilgili sorulardan bağlı listelere ilişkin bir ya da birkaç tane soru sorulur.
+
+### 48.Ders 1. Mülakat Sorusu
+
+Veri yapıları ve algoritmalar konusuyla ilgili olarak bir mülakatta sorulabilecek en temel sorulardan biri, **dynamic array(dinamik dizi)** ve **linked list(bağlı liste)** veri yapıları arasındaki farkın ne olduğudur.

@@ -220,7 +220,7 @@
         1. Comparison Operators(Karşılaştırma Operatörleri)
             - **Code Snipped(Değinildi)**
             1. Karşılaştırma Operatörlerinde Tipik hatalar ve İdiyomatik yapılar
-                1. Matematiksel İfadelerin Aynen Kullanılmasındna Kaynaklanan Hatalar
+                1. Matematiksel İfadelerin Aynen Kullanılmasından Kaynaklanan Hatalar
                 2. Karşılaştırma Operatörü(`==`) Yerine Atama(`=`) Operatörünün Kullanılmasından Kaynaklanan Hatalar
                 3. Ondalıklı Sayıların Karşılaştırılması İşlemlerinde Eşittir Operatörü İle Karşılaştırılmasından Kaynaklanan Hatalar
     2. Maximal Munch(En Büyük Lokma)
@@ -508,7 +508,7 @@
                 - "**Doxygene**" formatında dokümantasyon
 31. Ders
     1. Typedef Declerations-1 (Tür Eş Adı Bildirimleri)
-        1. Typedef Declerations Sentax
+        1. Typedef Declerations Syntax
         2. Neden `typedef` Bildirimi Yapılır?
             1. Varolan Bir Türü Daha Daraltılmış Bir Bağlamda Kullanıldığını Vurgulamak İçin `typedef` Kullanılabilir
             2. Özel Bir Amaç İçin Birçok Yerde Kullanılan Türlerin Türü Değiştirilmesi Gerektiğinde Kolaylık Sağlanması İçin `typedef` Kullanılabilir
@@ -791,8 +791,34 @@
         4. `mktime` Fonksiyonu
         5. `diftime` Fonksiyonu
         6. `clock` Fonksiyonu
-    4. Complete Types and Incomplate Types Kavramları
-47. Ders
+    4. Complete Types and Incomplate Types Kavramları 🌟
+47. Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Complete Types and Incomplate Types Kavramları Tekrar 🌟
+        - **Non-defined decleration**
+    2. C++ ya da OOP Tarzı Kütüphene Kullanımı
+        - **Yeniden derlenmesi(Recompile)** kavramı
+    3. Kendi `date` Kütüphanemizi C Tarzı Bir Kütüphane Olarak Oluşturalım 🌟
+        - **Yeniden kullanılabilirlik(reuseable)** kavramı
+        - **Multiple Include Guards(Header Include Guards)**
+        - **Set function**, **Setter**, **Mutater(daha çok C++ tarafında)** olarak tanımlanan fonksiyonlar
+        - **Self explanatory**
+        - **Refactoring(Kodun iyileştirilmesi)**
+        - **Reusability(Takrar kullanılabilirlik)**
 48. Ders
+    1. Kendi `date` Kütüphanemizi C Tarzı Bir Kütüphane Olarak Oluşturalım Devam 🌟
+    2. Yapıların Elemanlarının Yapı Türlerinden Olması
+        - **Composition**
+        - **Self Referential Structures**
+        - **Node(Düğüm)**
+        - **Alignment(hizalama)**
+        - **Padding Bytes or Hole Bytes**
+    3. Bir Yapının Elemanının Başka Bir Türden Yapı Olması Durumu
+        - **composition**
+    4. Linklist Data Structure(Bağlı Listeler Veri Yapısı)
+        - **Linked List(Bağlı liste)**
+        - **Signly Linked List(Tekli Bağlı Liste)**
+        - **Doubly Linked List(Çifte Bağlı Liste)**
+        - **Rotating Linked List(dairesel bağlı liste)** ya da **Circular Linked List(dairesel bağlı liste)**
+        - **Traverse** ya da **Navigate**  ya da **Itarete** kayramı(tek bir kavramı belirtmek için üç farklı terim kullanılabiliyor)
 49. Ders
 50. Ders
