@@ -460,10 +460,10 @@
                 - **Pointee**
 27. Ders
     1. Pointers Devam
-        - **Call by Referance(Pass by Referance)**
+        - **Call by Reference(Pass by Reference)**
         - **Call by Value(Pass by Value)**
         - **Operatör(operator)** ve **Dekleratördür(declerator)** farkı
-        1. Bir Fonksiyonun Parametresi Neden "Call By Referance" Yapılır
+        1. Bir Fonksiyonun Parametresi Neden "Call By Reference" Yapılır
             - **Pure function**
             - **Input parameter** ve **Output parameter**
         2. Pointer Aritmetiği
@@ -496,8 +496,8 @@
             2. `++ptr; *ptr = value;` Gibi İki Statement'ın `*++ptr` Şeklinde Tek Statement Olarak Kullanıldığı Idiomatic Yapı
             3. `++*ptr;` Şeklinde Kullanılan Idiomatic Yapı
         4. Fonksiyonların Geri Dönüş Değeri Olarak Pointer'lar
-            - **otomatic storage duration**
-            - **dangling pointer**
+            - **Otomatic Storage Duration**
+            - **Dangling Pointer**
             - **Const Cast**
 30. Ders
     1. Pointers Devam
@@ -804,7 +804,7 @@
         - **Self explanatory**
         - **Refactoring(Kodun iyileştirilmesi)**
         - **Reusability(Takrar kullanılabilirlik)**
-48. Ders
+48. Ders **(Bu derste özümsemesi biraz zor konular var)**
     1. Kendi `date` Kütüphanemizi C Tarzı Bir Kütüphane Olarak Oluşturalım Devam 🌟
     2. Yapıların Elemanlarının Yapı Türlerinden Olması
         - **Composition**
@@ -814,11 +814,185 @@
         - **Padding Bytes or Hole Bytes**
     3. Bir Yapının Elemanının Başka Bir Türden Yapı Olması Durumu
         - **composition**
-    4. Linklist Data Structure(Bağlı Listeler Veri Yapısı)
+    4. Bağlı Listeler Veri Yapısı(Linklist Data Structure) 🌟
         - **Linked List(Bağlı liste)**
         - **Signly Linked List(Tekli Bağlı Liste)**
         - **Doubly Linked List(Çifte Bağlı Liste)**
         - **Rotating Linked List(dairesel bağlı liste)** ya da **Circular Linked List(dairesel bağlı liste)**
         - **Traverse** ya da **Navigate**  ya da **Itarete** kayramı(tek bir kavramı belirtmek için üç farklı terim kullanılabiliyor)
-49. Ders
+49. Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Bağlı Listeler Veri Yapısı Devam (Linklist Data Structure) 🌟
+        - **Benchmarker** or **Profiler** programları
+        - **Cache friendly** kavramı
+        - **SIMD(Single Instruction, Multiple Data)**
+    2. Bağlı Listelerin Olabilecek Yararları
+        - **constan-time($O(1)$)** karmaşıklık
+        - **Fragmentation** kavramı
+        - **Değiş tokuş(swap)** işlemi
+        - **Splice** işlemi
+    3. `personlist` Modülünün Gerçekleştirimi
+    4. Handle Tekniği 🌟
+        - **Cleanup Code** kavramı
+    5. Alignment(Hizalama) 🌟
+        - **Alignment Requirement(Hizalama gereksinimleri)** kavramı
+        - **Absract Binary Interface** nedir
+        - **Padding Bytes or Hole Bytes** kavramı
+        1. **Padding Bytes** Bizi Neden İlgilendiriyor
 50. Ders
+    1. `offsetof` Function Like Makro 🌟
+    2. Unions(Birlikler) 🌟
+        - **Memory layout** kavramı
+    3. Unions(Birlikler) Kullanın Nedenleri
+        1. Bellekten Tasarruf İçin Kullanılır
+            - **Anonymous Union** aracı
+        2. Bir Veri Türünün Farklı iki Biçimde Temsil Edilmesi
+        3. Discriminated union(tagged union) Kullanım Biçimi
+            - **Discriminated union** ya da **Tagged union** kullanımı
+    4. Enumarations(Numaralandırmalar) 🌟
+        - **State machine**
+        -  **Enumaration constands** ya da **Enumarator**
+    5. Endianness Kavramı 🌟
+        - "**Little endian**" ve "**Big endian**" kavramları
+    6. Bitsel Operatörler(Bitwise Operations)
+        - **Bitsel Operatörler(Bitwise Operators)**
+51. Ders
+    1. Bitsel Operatörler(Bitwise Operations)
+        1. `~` Bitwise Not Operator
+        2. `>>` and `<<` Bitwise Right Shift Operator and Bitwise Left Shift Operator
+            1. `>>` Operatörünün İncelenişi
+            2. `>>` Operatörünün İncelenişi
+        3. `&` `|`  `^` Operators
+            1. `&` Operatörünün İncelenişi
+            2. `|` Operatörünün İncelenişi
+            3. `^` Operatörünün İncelenişi
+                - **Xor swap**
+    2. Bitsel Operatörler Hangi Amaçlarla Kullanılıyor
+        1. Bir tam sayının bir bitini belirlemek(**To set the bit**, **To turn the bit**)
+            - **Bitmask**
+        2. Bir tam sayının bir bitini sıfırlamak(**To reset the bit**, **To clear the bit**)
+        3. Bir tam sayının bir bitini değiştirmek(**To tootgle the bit**, **To flip the bit**)
+        4. Bir tam sayının bir bitini sınamak yani 1 mi yoksa 0 mı olduğunu öğrenmek(**To get the bit**, **To test the bit**)
+    3. Bitsel Operatörlerdeki Dört Temel İşlemden Haraketle Daha Karşaşık İşlemlerin Yapılması  
+52. Ders
+    1. Bitsel Operatörler(Bitwise Operations) Devam
+        1. Neden Bitsel İşlemleri Kullanıyoruz
+    2. Yapıların Bit Alanı Elemanları(Bitfield Members)
+        - **Storage Unit** değeri 
+    3. Bit Alanı Elemanların Kullanılma Nedenleri
+        1. Bellek alanından tasarruf sağlanması
+        2. Birlikler ile Bit Alanı Üyelerine Sahip Yapıların Birlikte Kullanılması
+53. Ders
+    1. Command Line Arguments
+        - **Command Line Environment**
+    2. Dosyalar ve Dosya İşlemleri
+        1. **Bir dosya nedir(what is a file)**
+            - **File Format**
+            - **Function wrapper**
+        2. `fopen` Fonksiyonu
+        3. `fclose` Fonksiyonu
+        4. Standart Olmayan `fcloseall` Fonksiyonu
+        5. Dosya İşlemlerinin Yapılmasının İncelenmesi
+            - **Dosya göstericisi(file pointer)**
+            - **Offset** değeri
+            - **Sequential Access**     
+            - **Random Access** ya da **Direct Access**
+        6. **Text mode** ve **Binary mode** İşlemlerinin Detayları
+        7. `fputc` Fonksiyonu
+54. Ders
+    1. `remove` ve `rename` Fonksiyonları
+    2. Basit Bir Şifreleme Algoritması Kullanımı
+    3. `fprintf` Fonksiyonu ile Dosyadan Formatlı Okuma ve Yazma İşlemleri
+    4. `fscanf` Fonksiyonu
+    5. `fgetc` ve `fgets` Fonksiyonu ile Dosyadan Okuma İşlemleri
+    6. `fputs` Fonksiyonu
+    7. Formatsız Okuma Yazma İşlemleri 🌟
+        1. `fread` ve `fwrite` Fonksiyonları
+55. Ders
+    1. Dosya Konum Göstericisi(File Pointer) Üzerinde İşlem Yapan Fonksiyonlar 🌟
+        1. `fseek`, `rewind` ve `ftell` Fonksiyonları
+        2. `fsetpos` ve `fgetpos` Fonksiyonları
+        3. Eof and Error Flag
+        4. `foef`, `ferror`, `clearerr` Fonksiyonları
+        5. `fflush` Fonksiyonu
+            - **File buffer(bir bellek alanı)**
+56. Ders
+    1. `stdout`, `stdin`, `stderr` Kullanımı
+    2. `freopen` Fonksiyonu
+    3. `setbuf` ve `setvbuf` Fonksiyonları
+    4. `ungetc` Fonksiyonu
+    5. C Dilinde Hatalar
+        1. C Dilinde Runtime errors
+        2. `errno` Değişkeni İle Hata Yönetimi
+            - **Thread safe**
+            1. `perror` ve `strerror` Fonksiyonları
+        3. `assert` Function-like Makrosu
+            - **Assertion Code** kavramı
+            - **Static Assertions** ya da **Compile Time Assertions** kullanımı
+            - **Dynamic Assertions** ya da **Run Time Assertions**
+        4. Dynamic Assertion İle Yapılan Çalışma Zamanı Hatalarınınn Yakalanması
+    6. C99 Standardı ve Bu Standart ile Gelen Eklemeler
+        1. VLA(Varible length array)
+57. Ek Ders
+    1. C Dilinde Hatalar Tekrar
+        1. Hata Durumlarının Bildirilmesi
+         1. `errno.h` Başlık Dosyasındaki Araçları Kullanarak Hata Kontrolü
+         2. `setjmp.h` Başlık Dosyasındaki `setjmp` ve `longjmp` Fonksiyonları
+    2. Variadic Fonksiyonlar 🌟
+58. Ek Ders
+    1. Type Qualifiers (Tür Niteleyicileri)
+        - **Memory map input output**
+        - **Kesmeler(interrupt)**
+        1. `volatile` Anahtar Sözcüğü
+        2. `restrict` Anahtar Sözcüğü
+            - **Pointer aliasing**
+    2. C99 Standardıyla Dile Eklenen Özellikler
+        1. VLA(Variable Length Array)
+        2. Compound Literals
+        3. Flexible Array Member(Esnek Dizi Elemanı)
+59. Ek Ders
+    1. C99 Standardıyla Dile Eklenen Özellikler Devam
+        1. Inline Functions
+        2. Variadic Macros
+        3. `//` Biçiminde Tek Satırlık Yorum Satırları Kullanabilme
+        4. `for` Döngüsü Deyiminde Değişken Tanımlayabilme
+        5. Executable statement Kullanımından Sonra Değişken Tanımlayabilme
+        6. Implicity Function Decleration Kullanımı Dilden Kaldırıldı
+        7. Designated Initialisers Özelliği
+        8. C Dilinde Olan Dizilerin Fonksiyonların Argümanı Olması Durumlarındaki Bazı İlginç Kullanımlar
+    2. Önceden İncelenmeyen Bazı Özenmli Standart C Fonksiyonları 
+        1. `fropen` Fonkiyonu
+        2. `mktime` Fonksiyonu
+        3. `mktime`, `difftime`, `strftime` Fonksiyonları
+    3. Çevresel Değişkenler(Enviroment Variables)
+    4. Pointer Hataları
+60. Ek Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Pointer Hataları Devam
+        - **Shallow Copy** ve **Deep Copy** kavramları
+    2. Dinamik Dizi Veri Yapısı Gerçekleştirimi(Daynamic Array Data Structure Implementation) 🌟
+        - **Amortised constand time**
+61. Ek Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Bağlı Liste Veri Yapısı Gerçekleştirimi(Liked List Data Structure Implementation) 🌟
+        - **Çapa(anchor)**, **Baş(head)**, **Kuyruk(tail)** kavramları
+        - **SIMD(Simgle Istruction Multiple Data)** özelliği
+        - **Profiling** araçları
+        - **Takas(swap)**, **Splice** işlemleri
+62. Ek Ders **(Bu derste özümsemesi biraz zor konular var)**
+    1. Abstract Data Structure(Soyut Veri Yapıları) 🌟
+        - **Kuyruk(queue)** ve **Yığın(stack)** soyut veri yapıları
+        - **FIFO(Fist in fist out)** ve **LIFO(Last in first out)** kavramları
+        - **Öncelik kuyruğu(priority queue)** soyut veri yapısı nedir
+        - **Özyinelemeli(recursion)** algoritma kavramı
+        1. **Kuyruk(queue)** Veri Yapısı
+            - **Enqueue**, **Dequeue** terimleri
+            - **Deque** soyut veri yapısı nedir
+        2. Soyut Kuyruk Veri Yapısının Dizi ile Gerçekleştirimi(Abstract Queue Data Structure Implementation with Array) 🌟
+        3. Soyut Kuyruk Veri Yapısının Bağlı Liste ile Gerçekleştirimi(Abstract Queue Data Structure Implementation with Linked List) 🌟
+        4. Soyut Yığın Veri Yapısının Dizi ile Gerçekleştirimi(Abstract Stack Data Structure Implementation with Array) 🌟
+        5. Soyut Yığın Veri Yapısının Bağlı Liste ile Gerçekleştirimi(Abstract Stack Data Structure Implementation with Linked List) 🌟
+63. Ek Ders
+    1. `scanf` Fonksiyonunun Kullanımı
+    2. `printf` Fonksiyonunun Kullanımı
+    3. `system` Fonksiyonunun Kullanımı
+    4. `X macro` Kullanımı
+    5. Generic Selection Aracı
+    6. C++ içindeki C
