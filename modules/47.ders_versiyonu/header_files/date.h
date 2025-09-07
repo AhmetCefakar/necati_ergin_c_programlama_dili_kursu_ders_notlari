@@ -2,7 +2,7 @@
 #ifndef DATE_H // Buradaki 'multiple inclusion guard' kullanımı tüm derleyicilerde desteklenmektedir.
 #define DATE_H
 
-// ! Yapının elemanlarını bilerek gizlemedik, ancak client kodların yapının elemanlarını kullanmasını istemiyoruz, bunun için de sık bir kullanım olarak(convernsion) dışarıdan değiştirilmemesi istenilen yapı değişkenlerinin adlarının sonuna '_' karakteri ekleniyor. [10:27:30]
+// ! Yapının elemanlarını bilerek gizlemedik, ancak client kodların yapının elemanlarını kullanmasını istemiyoruz, bunun için de sık bir kullanım olarak(convernsion) dışarıdan değiştirilmemesi istenilen yapı değişkenlerinin adlarının sonuna '_' karakteri ekleniyor.
 typedef struct{
     int d_;
     int m_;

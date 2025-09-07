@@ -102,7 +102,6 @@ PUBLIC int get_week_day(const Date* p)
     return day_of_week(GET_MOUNT_DAY(*p), GET_MOUNT(*p), GET_YEAR(*p));
 }
 
-//  [09:30:00]
 // Girilen tarihin yılın kaçıncı günü olduğu bilgisini geriye dönen fonksiyon
 PUBLIC int get_year_day(const Date* p)
 {
@@ -218,7 +217,7 @@ PRIVATE bool is_valid_date(int d, int m, int y)
         m > 0 && m <= 12 && MONTHDAYS(y, m);
 }
 
-// 1 1 YEARBASE'den sonra geçen gün sayısı. [10:09:30] 
+// 1 1 YEARBASE'den sonra geçen gün sayısı. 
 PRIVATE int totaldays(const Date* p)
 {
     int sum = get_year_dat(p); // Fonksiyona geçilen tarihin yılındaki gün sayısı elde ediliyor.
