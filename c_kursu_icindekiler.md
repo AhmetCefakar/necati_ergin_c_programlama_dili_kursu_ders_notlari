@@ -424,7 +424,7 @@
         - **In-Place Algorithm**
         - **Stable(kararlı)/Anstable(kararsız) Algorithm**
         1. Bubble Sort Algorithm
-            - **Boble Sort**
+            - **Bubble Sort**
             - **Quick Sort**
         2. Selection Sort Algorithm
     3. Searching and Searching Algorithms(Arama ve Arama Algoritmaları)
