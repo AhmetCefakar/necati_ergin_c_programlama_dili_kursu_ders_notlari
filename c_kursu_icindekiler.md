@@ -137,7 +137,7 @@
             - **Pure Function**
             - **Unreachable Code**
             1. Fonksiyonların Geri Dönüş Değerleri Ne Olabilir
-                - **Test Function**, **Query Function**, **Pradicate Function(özellikle C++ dilinde bu şekilde adlandırılıyor)**
+                - **Test Function**, **Query Function**, **Pradicate Function(özellikle C++ dilinde bu biçimde adlandırılıyor)**
 7. Ders
     1. Functions Devam(Kursun 1. Çeyreğinin en önemli konusu)
         1. İş Yapan Türden Fonksiyonlar
@@ -492,9 +492,9 @@
         1. Adresler(pointer) ve Karşılaştırma İşlemleri Devam
         2. Göstericilerle Birlikte Kullanılabilen Bazı Operatörlerin Tekraredilmesi
         3. Pointer Idioms
-            1. `*ptr = value; ptr++;` Gibi İki Statement'ın `*ptr++;` Şeklinde Tek Statement Olarak Kullanıldığı Idiomatic Yapı
-            2. `++ptr; *ptr = value;` Gibi İki Statement'ın `*++ptr` Şeklinde Tek Statement Olarak Kullanıldığı Idiomatic Yapı
-            3. `++*ptr;` Şeklinde Kullanılan Idiomatic Yapı
+            1. `*ptr = value; ptr++;` Gibi İki Statement'ın `*ptr++;` Biçiminde Tek Statement Olarak Kullanıldığı Idiomatic Yapı
+            2. `++ptr; *ptr = value;` Gibi İki Statement'ın `*++ptr` Biçiminde Tek Statement Olarak Kullanıldığı Idiomatic Yapı
+            3. `++*ptr;` Biçiminde Kullanılan Idiomatic Yapı
         4. Fonksiyonların Geri Dönüş Değeri Olarak Pointer'lar
             - **Otomatic Storage Duration**
             - **Dangling Pointer**
