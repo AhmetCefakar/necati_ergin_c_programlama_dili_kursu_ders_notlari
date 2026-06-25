@@ -4,13 +4,13 @@ Buradaki içerik Necati Ergin tarafından verilen "C Programlama Dili Kursu" iç
 
 Kursta anlatılanlar(sorulan sorular ve yanıtları ve bazı detaylı açıklamalar) büyük ölçüde(~%95) buradaki içerikte yer almaktadır.
 
-🔥 Bu içeriğin oluşturulduğu ilgili kurs ilk başta 200 saat olarak başladı ancak derslerin ilerleyişinden ve sorulan sorulardan da </br> 
+Bu içeriğin oluşturulduğu ilgili kurs ilk başta 200 saat olarak başladı ancak derslerin ilerleyişinden ve sorulan sorulardan da </br> 
 kaynaklı olarak toplamda 45 saat daha uzayıp toplamda 245 saat sürmüştür(yaklaşık yedi ya da sekiz ay civarı). İnsan ilk başta 200 saat </br> 
 kurs mu olur diyebiliyor ama işin içine girince neden 200 saat olduğu anlaşılıyor. Bir şeyi bilmek ne anlama geliyor en azından C diliyle </br> 
 ilgili olarak detaylıca anlayabilmek için buradaki içerikten faydalanılabilir.
 
 
-🧠 Yazarın kişisel yorumu: İyi bir C dili bilgisine sahip olmak sistem programcılığıyla ilgilenmek isteyen birinin sahip olması gereken en önemli </br> 
+Yazarın kişisel yorumu: İyi bir C dili bilgisine sahip olmak sistem programcılığıyla ilgilenmek isteyen birinin sahip olması gereken en önemli </br> 
 kabiliyettir. Bu kabiliyeti edindikten sonra microchip'lerin tek anladığı dil olan Assebly dillerini öğrenmeye ve kullanılmaya geçilebilir ya da </br>
 sistem programlama ve işletim sistemleri konularını öğrenmeye ve bu konularda çalışmaya geçilebilir ya da C++ öğrenmeye başlanabilir ya da herhengibir </br>
 başka programlama dili ile ilgili de çalışma yapılacak bile olsa buradaki C bilgisine sahip olunca bu konularda kolayca yol alınabildiği farkedilecektir. </br>
