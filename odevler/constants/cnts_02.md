@@ -1,6 +1,6 @@
 #### Aşağıdaki sabitlerin _(constants)_ türlerini yazınız. Geçersiz olanları belirtiniz.
 
-**int** türü 4 byte boyutunda olduğu kabul edildiğinde cevaplar aşağıdaki gibi olacaktır;
+**int** türü 4 byte boyutunda olduğu kabul edildiğinde yanıtlar aşağıdaki gibi olacaktır;
 
 - 0. → double türündedir.
 - 0.F → float türündedir.

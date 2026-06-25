@@ -7,7 +7,7 @@
 - 65
 - 48
 
-#### Cevap
+#### Yanıt
 
 On tabanındaki bir sayıyı 16 tabanına çevirmenin en kolay yollarından biri sayıyı ikilik tabanına çevirip bundan sonra on altılık tabana çevirmektir.
 

@@ -44,8 +44,8 @@ Aşağıdaki sorular sayı tabanları konusunda mülakatlarda sorulabilecek soru
 
 ### 5.Ders 1. Mülakat Sorusu
 
-👇 Aşağıdaki programın bir mülakatta yorumlanması istendiğinde verilecek cevap `x` değişkeninin "**indetermined value**" değer alacağı için "**ub**" durumunun oluşacağıdır. </br>
-😱 Aşağıdaki gibi kodlar Türkiye'deki bazı firmaların yaptığı mülakatlarda sorulduğu oluyormuş ve bu kursu bitiren kişiler cevap olarak burada "**ub**" var diye cevap verdiklerinde mülakatı yapan kişi trajikomik şekilde "_**ub** de ne demek programlar deteministtir olmaz öyle şey._" diyorlarmış!
+👇 Aşağıdaki programın bir mülakatta yorumlanması istendiğinde verilecek yanıt `x` değişkeninin "**indetermined value**" değer alacağı için "**ub**" durumunun oluşacağıdır. </br>
+😱 Aşağıdaki gibi kodlar Türkiye'deki bazı firmaların yaptığı mülakatlarda sorulduğu oluyormuş ve bu kursu bitiren kişiler yanıt olarak burada "**ub**" var diye yanıt verdiklerinde mülakatı yapan kişi trajikomik şekilde "_**ub** de ne demek programlar deteministtir olmaz öyle şey._" diyorlarmış!
 ```C
 #include <stdio.h>
 
@@ -63,7 +63,7 @@ int main(void)
 
 ### 6.Ders 1. Mülakat Sorusu
 
-Necati Ergin, C ve C++ mülakatlarını yaparken ilk baştan çok basit sorular ile başlayıp doğru cevapları alabilirse soruları zorlaştırarak mülakata devam ediyormuş, bu temel sorulardan biri 👇 aşağıdaki gibidir.
+Necati Ergin, C ve C++ mülakatlarını yaparken ilk baştan çok basit sorular ile başlayıp doğru yanıtları alabilirse soruları zorlaştırarak mülakata devam ediyormuş, bu temel sorulardan biri 👇 aşağıdaki gibidir.
 ```C
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -108,7 +108,7 @@ Mülakatlarda en çok sorulan sorulardan biri => `foo(a, b); // ',' separator`, 
 
 C mülakatlarında sorulan en temel soru: Aşağıdaki C kodunda ekrana ne yazılacaktır. </br>
 Burada şuna dikkat edilmesi gerekiyor, `foo(i)` fonksiyonunun sadece bildirimi var **tanımlaması(gövdesini)** yok ama biz şunu biliyoruz: "_C dilinde bir fonksiyona gönderilen değerler varsayılan olarak **Call by Value(Pass by Value)** ve bu durumda `i` değişkeninin değerinin `foo` fonksiyonundan değiştirilmeyeceğidir._". </br>
-C++ dilinde cevap şudur: `foo(i)` fonksiyonunun **tanımını(gövdesini)** görmemiz gerekiyor.
+C++ dilinde yanıt şudur: `foo(i)` fonksiyonunun **tanımını(gövdesini)** görmemiz gerekiyor.
 ```C
 #include <stdio.h>
 
@@ -153,7 +153,7 @@ int main(void)
 
 ### 8.Ders 2. Mülakat Sorusu
 
-👇 Aşağıdaki programdaki gibi büyük harf `'A'` karakterini yazmak için kullanılan doğrudan `65` rakamının kullanılmasıyla `A` karakterinin kullanılması arasında ne gibi bir farklılık vardır diye C mülakatlarında sorulabiliyormuş, buradaki cevap çok açık eğer karakterin sayısal kodu kullanılırsa C programının çalışacağı karakter kodlaması değiştirildiğinde sorun yaşanır o nedenle doğrudan kullanılan karakterin yazılması doğru olacaktır çünkü **ASCII** dışındaki bir karakter kodlamasında 65 rakamı `'A'` karakterine karşılık gelmeyebilir.
+👇 Aşağıdaki programdaki gibi büyük harf `'A'` karakterini yazmak için kullanılan doğrudan `65` rakamının kullanılmasıyla `A` karakterinin kullanılması arasında ne gibi bir farklılık vardır diye C mülakatlarında sorulabiliyormuş, buradaki yanıt çok açık eğer karakterin sayısal kodu kullanılırsa C programının çalışacağı karakter kodlaması değiştirildiğinde sorun yaşanır o nedenle doğrudan kullanılan karakterin yazılması doğru olacaktır çünkü **ASCII** dışındaki bir karakter kodlamasında 65 rakamı `'A'` karakterine karşılık gelmeyebilir.
 ```C
 #include <stdio.h>
 #include <ctype.h>
@@ -420,7 +420,7 @@ int main(void)
 
 ### 14.Ders 2. Mülakat Sorusu
 
-❔ Aşağıdaki soru mülakatlarda sorulduğunda 9/10 soruya yanlış cevap veriyormuş.
+❔ Aşağıdaki soru mülakatlarda sorulduğunda 9/10 soruya yanlış yanıt veriyormuş.
 - 👇 Aşağıdaki program "Program çalıştığında process'in akışı `double dval = 10 / (a == 5 ? x : d);` kodunun olduğu yere geldiğinde ekrana `dval` değeri ne olarak yazdırılır?" bu sorunun anlaşılması için incelenebilir. 
 ```C
 #define _CRT_SECURE_NO_WARNINGS
@@ -451,7 +451,7 @@ int main(void)
 
 ### 14.Ders 3. Mülakat Sorusu
 
-❔ Aşağıdaki soru mülakatlarda çok sık sorulan sorularda biridir ve 9/10 kişi yanlış cevap veriyormuş, burada dikkat önemli.
+❔ Aşağıdaki soru mülakatlarda çok sık sorulan sorularda biridir ve 9/10 kişi yanlış yanıt veriyormuş, burada dikkat önemli.
 - Aşağıdaki program çalıştırıldığında konsola ne yazar?
 - 👇 Aşağıdaki program detaylı incelendiğinde `while(i++ < 10);` statement görülecektir burada sonra ';' token'ı var ve bu da döngünün bir statement çalıştırmadan on defa dönmesine ve en son adımda `i++` ifadesinden dolayı `i`nin değerinin 11 olmasına neden olur, bundan sonra `printf("%d ", i);` statement çalıştırılır ve ekrana "11" yazar.
 ```C
@@ -580,15 +580,15 @@ Mülakatlarda sık sorulan sorulardan biri aşağıdaki gibidir;
 
 int main(void)
 {
-    // 1. cevap
+    // 1. yanıt
     if(printf("merhaba dunya"))
     {}
 
-    // 2. cevap
+    // 2. yanıt
     while(!printf("merhaba dunya"))
     {}
     
-    // 3. cevap
+    // 3. yanıt
     switch(printf("merhaba dunya"))
     {}
 }
@@ -962,7 +962,7 @@ int main(void)
 
 ## 21.Ders
 
-❗Necati Ergin kendi yaprığı C mülakatlarında en çok sorduğu en basit sorulardan biri aşağıdki gibidir, bu soruya işi profesyonel olarak C programı yazmak olanların %60 civarı yanlış cevap veriyormuş.
+❗Necati Ergin kendi yaprığı C mülakatlarında en çok sorduğu en basit sorulardan biri aşağıdki gibidir, bu soruya işi profesyonel olarak C programı yazmak olanların %60 civarı yanlış yanıt veriyormuş.
 - 👇 Aşağıdaki programda `char` türlerinde yapılan işlemlerdeki **integral promotion** durumunun nasıl uygulandığı incelenebilir. 
 ```C
 #define _CRT_SECURE_NO_WARNINGS
@@ -1041,9 +1041,9 @@ int main(void)
 }
 ```
 
-Cevap;
+Yanıt;
 🧠 Programın for döngüsü incelendiğinde tür dönüşümlerinden dolayı hiç bir zaman döngüye girilmeyeceği anlaşılacaktır, **asize** adındaki **function-like makro** bünyesinde `sizeof` operatörünü barındırıyor ve bu operatörün üreteceği değer işaretsiz tam sayı değeri, döngü şartında `int` ve **işeretsiz int** türü mantıksal(logic) işleme sokulduğunda işlem tür dönüşümü kuralları gereği işaretsiz tam sayı türünde yapılacaktır, bu işlemde `i < asize(arry) - 3` ifadesindeki `<` operantının sol operantı olan "-3" bitlerinde değişiklik yapılmadan türü işaretsiz tam sayı türü olarak değerlendirildiği için çok büyük bir sayı olacaktır ve bu nedenle de döngü şartı her zaman zero(false) değerde olur ve döngüye hiç bir zaman girilmez. </br>
-🎉 Fakat C mülakatlarına giren kişiler bu soruya "Dizinin tüm elemanları yazdırılacaktır." şeklinde cevap verip tongaya düşüyorlarmış.
+🎉 Fakat C mülakatlarına giren kişiler bu soruya "Dizinin tüm elemanları yazdırılacaktır." şeklinde yanıt verip tongaya düşüyorlarmış.
 
 
 ## 23.Ders
@@ -1296,7 +1296,7 @@ int main(void)
 > 
 > Tohum değerini mikro saniye olarak kullanabiliyor muyuz? 
 > 
-> Cevap;
+> Yanıt;
 > 
 > Eğer yukarıdaki programlarda soruna neden olan saniye türündeki tohum değeri yerine "mikro saniye" türünden tohum değeri kullanılırsa yaşanılan sorun oluşmayabilirdi ama bu "mikro saniye" kullanımıyla ilgili kütüphaneyi incelediğimiz zaman öğreneceğimiz bir konu(dilin standart kütüphanesiyle mi yoksa işletim sisteminin sistem fonksiyonu çağırarak mı bu yapılabilir bunu ileride öğrenebileceğiz). 
 
@@ -1666,7 +1666,7 @@ int main(void)
 
 ### 29.Ders 2. Mülakat Sorusu
 
-😱 Bazen C mülakatlarını yapan kişilerin bilgi düzeyleri yeterli olmadığı için sorulan sorulara doğru cevap veren mülakata giren kişilerin cevapları doğru kabul edilmediği durumlar da olabiliyormuş. </br>
+😱 Bazen C mülakatlarını yapan kişilerin bilgi düzeyleri yeterli olmadığı için sorulan sorulara doğru yanıt veren mülakata giren kişilerin yanıtları doğru kabul edilmediği durumlar da olabiliyormuş. </br>
 👇 Mesela C mülakatında aşağıdaki gibi bir soru sorulup cevabın ne olduğu sorulduğunda bu programda "**ub**" var dendiğinde mülakatı yapan kişi "Tanımsız davranış ta nedir öyle şey mi olur." dediği olabiliyormuş.
 ```C
 #define _CRT_SECURE_NO_WARNINGS
@@ -2184,8 +2184,8 @@ void foo(void)
 ### 43.Ders 2. Mülakat Sorusu
 
 C mülakatlarında sorulan bir soru; </br>
-"dosya1.c" dosyasında `void foo(void){ ... }` adında bir fonksiyon tanımlanmış ama bu fonksiyon "dosya1.c"  dosyasından hiç çağrılmamış, bu bir mantıksal hata mı? cevap => Hayır değildir çünkü modülün bu fonksiyonu sadece modül dışından kullanılmak için yazılmıştır. </br>
-"dosya1.c" dosyasında `static void foo(void){ ... }` adında bir fonksiyon tanımlanmış ama bu fonksiyon "dosya1.c"  dosyasından hiç çağrılmamış, bu bir mantıksal hata mı? cevap => Evet çünkü ilgili fonksiyon `static` tanımlandığı için dışarıdan erişime kapalıdır, o zaman ilgili fonksiyonun hiç olmaması daha doğru olacaktır.
+"dosya1.c" dosyasında `void foo(void){ ... }` adında bir fonksiyon tanımlanmış ama bu fonksiyon "dosya1.c"  dosyasından hiç çağrılmamış, bu bir mantıksal hata mı? yanıt => Hayır değildir çünkü modülün bu fonksiyonu sadece modül dışından kullanılmak için yazılmıştır. </br>
+"dosya1.c" dosyasında `static void foo(void){ ... }` adında bir fonksiyon tanımlanmış ama bu fonksiyon "dosya1.c"  dosyasından hiç çağrılmamış, bu bir mantıksal hata mı? yanıt => Evet çünkü ilgili fonksiyon `static` tanımlandığı için dışarıdan erişime kapalıdır, o zaman ilgili fonksiyonun hiç olmaması daha doğru olacaktır.
 
 
 ### 43.Ders 3. Mülakat Sorusu

@@ -1263,12 +1263,12 @@ int main(void)
 ### 28.Ders 2. Önemli Bilgi
 
 ❔`ptr` adlı bir pointer değişken ismi `a` olan bir dizinin bir elemanını göstermektedir, `ptr`nin gösterdiği dizi elemanının indeksi nedir? </br>
-❗❗❗ Cevap `ptr - a` olacaktır buradan şu sonuç çıkacaktır;
+❗❗❗ Yanıt `ptr - a` olacaktır buradan şu sonuç çıkacaktır;
 - Bir dizinin bir elemanının adresini biliyorsak indeksini de biliyoruz demektir.
 - Bir dizinin bir elemanının indeksini biliyorsak adresini de biliyoruz demektir.
 
 ❔İsmi `a` olan bir dizinin bir elemanının indeksi `idx` ise bu elemanın adresi nedir? </br>
-❗❗❗ Cevap `a + idx` olacaktır.
+❗❗❗ Yanıt `a + idx` olacaktır.
 
 
 ### 28.Ders 3. Önemli Bilgi
@@ -3060,7 +3060,7 @@ Her şeyi sadece standart C fonksiyonlarına çağrı yaparak mümkün mü düye
 > Global de yapabilir miyiz bu tanımı? </br>
 > Anladim, amacim ptr yi baska dosyalarin  kullanimina erişimine sunmaktı. ptr global tanimlayip main icinde malloc ile atama yapamaz miyiz
 > 
-> Cevap;
+> Yanıt;
 > 
 > Hayır, bu C dilindeki **sözdizimiyle(syntax)** ilgili bir durumdur. </br>
 > C dilinde **static** ömürlü değişkenlere ilk değer veren ifadenin **constant expression** olması gerekiyor yoksa **sözdizim hatası(syntax error)** oluşacaktır. </br>

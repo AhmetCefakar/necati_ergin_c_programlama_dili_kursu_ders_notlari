@@ -7,7 +7,7 @@
 - -128
 - -1
 
-#### Cevap;
+#### Yanıt;
 
 - -50&nbsp;: 50 sayısı ikilik tabanda "**0011 0010**" şeklinde gösterilir, bunun ikiye tümleyeni "**1100 1110**" şeklindedir. -50 sayısı "**1100 1110**" olarak gösterilir.
 - -100: 100 sayısı ikilik tabanda "**0111 0100**" şeklinde gösterilir, bunun ikiye tümleyeni "**1000 1100**" şeklindedir. -100 sayısı "**1000 1100**" olarak gösterilir.

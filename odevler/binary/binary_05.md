@@ -5,7 +5,7 @@
 - İşaretli ikilik sayı sisteminde _2 byte_'lık alanda yazılan -1 değeri
 
 
-#### Cevap;
+#### Yanıt;
 
 İşaretli ikilik sayı sisteminde $2^{16}$ adet sayı temsil edilebilir, bu sayıların yarısı pozitif yarısı negatif olacaktır.
 Yazılabilecek en büyük sayı $2^{15} - 1$ ve en küçük sayı $-2^{15}$ olacaktır.

@@ -524,7 +524,7 @@
         - **Intrinsic Function**
         - **SIMD(Single Instruction Multiple Data)**
         - **Generic Programing**
-        - C ve C++ ile ilgili yazılım sektörüyle ilgili sorulan bazı sorulara cevap verildi
+        - C ve C++ ile ilgili yazılım sektörüyle ilgili sorulan bazı sorulara yanıt verildi
         1. Yazıyla İlgili İşlem Yapan Fonksiyonlar
             - **NULL Terminated Byte Streams**
             1. `puts` Fonksiyonu

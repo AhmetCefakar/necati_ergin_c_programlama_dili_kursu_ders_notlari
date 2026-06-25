@@ -6,7 +6,7 @@
 - 65
 - 129
 
-#### Cevap;
+#### Yanıt;
 
 İkilik sayı sisteminde sayıları ifade edebilmek için sadece iki tane sayı mevcuttur, bunlar 0 ve 1 sayılarıdır. İkilik sayı tabanında taban değeri ikidir bu da basamak ağırlıklarının ikinin katları olarak ilerlediği anlamına gelir, decimal(onluk sayı sistemi) sistemde basamak ağırlıkları on sayısının katları şeklinde ilerler.
 
